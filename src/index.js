@@ -1,10 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./pages/App";
+import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { theme } from './styles/theme';
+import "./fonts/Lora/Lora-Italic-VariableFont_wght.ttf";
+import "./fonts/Lora/Lora-VariableFont_wght.ttf";
+import "modern-normalize";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <BrowserRouter basename="/svitlana-ripka">
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
