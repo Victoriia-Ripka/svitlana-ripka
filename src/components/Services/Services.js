@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../styles.styled";
-import image from "../../images/png/x1/consultation_background_x1.png";
+
 import {
   ServicesContainer,
   Title,
@@ -49,7 +49,7 @@ const Services = () => {
             </Text>
             <Text>50 хв/1500 грн. 50хв/$40</Text>
           </TextDiv>
-          <Image src={image} alt="зручне крісло для консультацій" />
+          <Image></Image>
         </InfoDiv>
       </ServicesContainer>
     </Container>
