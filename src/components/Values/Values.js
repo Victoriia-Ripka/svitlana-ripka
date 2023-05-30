@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../styles.styled';
+import { Container, HidenTitle } from '../styles.styled';
 import {
   ImageBackground,
   ValuesContainer,
@@ -15,6 +15,7 @@ import {
 const Values = () => {
   return (
     <Container>
+      <HidenTitle>Мої цінності у роботі</HidenTitle>
       <ValuesContainer>
         <FirstTextMobile>
           У кожну консультацію вкладаю цінності абсолютної довіри, емпатії,

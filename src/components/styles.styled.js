@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../styles/device";
+import styled from 'styled-components';
+import { device } from '../styles/device';
 
 export const Container = styled.section`
   width: 100%;
@@ -34,4 +34,12 @@ export const AdditionalContainer = styled.div`
   @media ${device.laptop} {
     padding: 50px 108px;
   }
-`
+`;
+
+export const HidenTitle = styled.h2`
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+`;

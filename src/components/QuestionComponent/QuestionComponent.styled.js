@@ -1,6 +1,24 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { device } from '../../styles/device';
 import image from '../../images/svg/down-arrow-svgrepo-com.svg';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const fadeInSecond = keyframes`
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+`;
 
 export const Container = styled.div`
   position: relative;
@@ -64,8 +82,9 @@ export const ImgContainer = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
 
-  transform: ${({ isOpen }) => (isOpen ? 'rotete(180deg)' : 'rotete(0)')};
-
+  // transform: ${({ isOpen }) => (isOpen ? 'rotete(180deg)' : 'rotete(0)')};
+  transform: ${({ isOpen }) =>
+    isOpen ? 'translateY(-50%) rotate(180deg)' : ''};
   transition: all 0.5s ease;
 
   @media ${device.tablet} {
@@ -82,8 +101,16 @@ export const ImgContainer = styled.div`
 `;
 
 export const AnswerText = styled.p`
-  font-family: 'Lora';
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  ${({ isOpen }) =>
+    isOpen
+      ? css`
+          animation: ${fadeIn} 0.7s ease, ${fadeInSecond} 0.7s ease;
+        `
+      : ''};
+
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 11px;
   line-height: 1.3;

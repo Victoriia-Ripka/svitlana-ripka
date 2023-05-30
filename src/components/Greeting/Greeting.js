@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../styles.styled";
+import { Container, HidenTitle } from "../styles.styled";
 import {
   GreetingContainer,
   TextContainer,
@@ -14,6 +14,7 @@ const Greeting = () => {
     <div style={{ background: "rgba(217, 217, 217, 0.2)" }}>
       <Container>
         <GreetingContainer>
+          <HidenTitle>Привітання</HidenTitle>
           <ImgContainer>
             <Img src={image} alt="white flowers and notes" loading="lazy"/>
           </ImgContainer>

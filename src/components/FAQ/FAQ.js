@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from '../styles.styled';
+import { Container, HidenTitle } from '../styles.styled';
 import { QuestionList } from './FAQ.styled';
 import QuestionComponent from '../QuestionComponent/QuestionComponent';
 import FAQArray from '../../data/FAQ.json';
@@ -30,6 +30,7 @@ const QandA = () => {
 
   return (
     <Container>
+      <HidenTitle>Питання і відповіді</HidenTitle>
       <QuestionList>
         {FAQArray.map((item, index) => (
           <li key={index}>
