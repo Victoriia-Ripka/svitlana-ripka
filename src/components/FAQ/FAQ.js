@@ -22,7 +22,6 @@ const QandA = () => {
         } else {
           item.open = false;
         }
-        console.log(index, item);
         return item;
       })
     );

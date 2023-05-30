@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { device } from '../../styles/device';
 import image_mobile from '../../images/images/mobile/services_x1.jpg';
 import image_mobileTablet from '../../images/images/mobileTablet/services_x1.jpg';
-import image_tablet from "../../images/images/tablet/services_x1.jpg";
-import image_laptop from "../../images/images/laptop/services_x1.jpg";
+import image_tablet from '../../images/images/tablet/services_x1.jpg';
+import image_laptop from '../../images/images/laptop/services_x1.jpg';
 
 export const ServicesContainer = styled.div`
   display: flex;
@@ -71,19 +71,13 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   cursor: pointer;
-  color: #ffffff;
-  transition: 0.5s;
-
-  &:hover,
-  &:focus {
-    color: #000000;
-  }
 
   @media ${device.tablet} {
     padding: 0 5px;
   }
 
   @media ${device.laptop} {
+    padding: 0 10px;
   }
 `;
 
@@ -93,7 +87,13 @@ export const NavText = styled.span`
   font-size: 12px;
   line-height: 1.3;
   text-align: center;
-  color: inherit;
+  color: ${({ isOpen }) => (isOpen ? '#000000' : '#ffffff')};
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: #594d46;
+  }
 
   @media ${device.mobileTablet} {
     font-size: 13px;
