@@ -67,6 +67,10 @@ export const TextContainer = styled.div`
   }
   @media ${device.laptop} {
     width: 570px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -89,7 +93,7 @@ export const Text = styled.p`
     margin: 0 0 15px;
     max-width: 308px;
   }
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     font-size: 24px;
     margin: 0 0 20px;
     text-align: left;
