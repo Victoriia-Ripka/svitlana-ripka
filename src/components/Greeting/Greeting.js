@@ -7,7 +7,7 @@ import {
   Text,
   Img,
 } from "./Greeting.styled";
-import image from "../../images/png/x1/greeting_x1.png";
+import image from "../../images/png/greeting_x1.png";
 
 const Greeting = () => {
   return (

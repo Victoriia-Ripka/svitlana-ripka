@@ -22,7 +22,7 @@ function App() {
           <Route path="program-for-parents" element={<ProgramPage />} />
           <Route path="articles" element={<ArticlesPage />}>
             {/* id article */}
-            <Route path="article" element={""} />
+            <Route path="articles/{id}" element={""} />
           </Route>
         </Route>
         {/* <NotFound /> */}

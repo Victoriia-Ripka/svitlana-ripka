@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../styles.styled";
-import image from "../../images/png/x1/goal_x1.png";
+import image from "../../images/png/goal_x1.png";
 import {
   AimContainer,
   TextContainer,
