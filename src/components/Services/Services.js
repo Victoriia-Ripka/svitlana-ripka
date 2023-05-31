@@ -89,8 +89,8 @@ const Services = () => {
                 </TextDiv>
               );
             }
+            return <></>
           })}
-
           <Image></Image>
         </InfoDiv>
       </ServicesContainer>

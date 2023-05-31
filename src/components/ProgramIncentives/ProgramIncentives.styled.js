@@ -57,8 +57,10 @@ export const InfoContainer = styled.div`
 
 export const TextContainer = styled.div`
   text-align: center;
+  margin-bottom: 20px;
   @media ${device.mobileTablet} {
     width: 208px;
+    margin-bottom: 0;
     margin-right: 20px;
   }
   @media ${device.tablet} {
