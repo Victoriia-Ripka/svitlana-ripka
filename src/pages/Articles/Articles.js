@@ -1,12 +1,8 @@
-import Footer from "../../components/Footer/Footer";
-import React from "react";
+import Articles from '../../components/Articles/Articles';
+import React from 'react';
 
 const ArticlesPage = () => {
-  return (
-    <>
-      <Footer/>
-    </>
-  );
+  return <Articles />;
 };
 
 export default ArticlesPage;

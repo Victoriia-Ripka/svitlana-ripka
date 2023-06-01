@@ -1,10 +1,14 @@
-import Footer from "../../components/Footer/Footer";
-import React from "react";
+import Education from '../../components/Education/Education';
+import Experience from '../../components/Experience/Experience';
+import Numbers from '../../components/Numbers/Numbers';
+import React from 'react';
 
 const AboutPage = () => {
   return (
     <>
-      <Footer/>
+      <Numbers />
+      <Experience />
+      <Education />
     </>
   );
 };

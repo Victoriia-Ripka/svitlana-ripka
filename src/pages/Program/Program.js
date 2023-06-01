@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer/Footer";
 import React from "react";
 import ProgramIncentives from "../../components/ProgramIncentives/ProgramIncentives";
 import ProgramBenefits from "../../components/ProgramBenefits/ProgramBenefits";
@@ -14,7 +13,6 @@ const ProgramPage = () => {
       <ProgramResult />
       <ProgramSchedule />
       <ProgrammAddInfo />
-      <Footer/>
     </>
   );
 };

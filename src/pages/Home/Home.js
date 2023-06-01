@@ -1,5 +1,4 @@
 import Aim from "../../components/Aim/Aim";
-import Footer from "../../components/Footer/Footer";
 import Greeting from "../../components/Greeting/Greeting";
 import Hero from "../../components/Hero/Hero";
 import Reviews from "../../components/Reviews/Reviews";
@@ -12,7 +11,6 @@ const HomePage = () => {
       <Greeting />
       <Aim />
       <Reviews />
-      <Footer />
     </>
   );
 };

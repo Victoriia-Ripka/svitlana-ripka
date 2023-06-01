@@ -1,11 +1,9 @@
-import Footer from "../../components/Footer/Footer";
+import Article from "../../components/Article/Article";
 import React from "react";
 
 const ArticlePage = () => {
   return (
-    <>
-      <Footer/>
-    </>
+    <Article/>
   );
 };
 
