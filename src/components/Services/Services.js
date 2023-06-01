@@ -75,10 +75,10 @@ const Services = () => {
           </NavList>
         </NavigationDiv>
         <InfoDiv>
-          {activeType.map((item) => {
+          {activeType.map((item, index) => {
             if (item.open) {
               return (
-                <TextDiv>
+                <TextDiv key={index}>
                   <Text>
                    {item.text1}
                   </Text>
@@ -89,7 +89,7 @@ const Services = () => {
                 </TextDiv>
               );
             }
-            return <></>
+            return <p key={index}></p>
           })}
           <Image></Image>
         </InfoDiv>
