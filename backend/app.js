@@ -2,11 +2,13 @@ const express = require('express');
 const moment = require('moment');
 const fs = require('fs/promises');
 const cors = require('cors');
+
 const articlesRouter = require('./routes/api/articles');
 
 const app = express();
 
 app.use(cors());
+app.use(express.json())
 
 app.use(async (req, res, next) => {
   const { method, url } = req;

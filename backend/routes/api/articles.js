@@ -1,13 +1,10 @@
-const express = require('express')
+const express = require('express');
+const articles = require('../../controllers/articles');
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json(['/api/articles']);
-});
+router.get('/', articles.getAllArticles);
 
-router.get('/:id', (req, res) => {
-  res.json(['/api/articles/:id']);
-});
+router.get('/:id', articles.getArticle);
 
 module.exports = router;
