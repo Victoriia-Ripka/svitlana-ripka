@@ -7,11 +7,13 @@ import {
   QuestionText,
   ImgContainer,
   AnswerText,
+  BoldText,
+  NormalText,
 } from './ProgramSchedule.styled';
 import { ExtraContainer } from 'components/ProgramBenefits/ProgramBenefits.styled';
+import scheduleText from '../../data/schedule.json';
 
 const ProgramSchedule = () => {
-  const answer = 'hello';
   const [open, setOpen] = useState(false);
 
   const toggleSchedule = () => {
@@ -31,7 +33,16 @@ const ProgramSchedule = () => {
           <QuestionText>Теми занять</QuestionText>
           <ImgContainer></ImgContainer>
         </ContainerAnswer>
-        <AnswerText isOpen={open}>{answer}</AnswerText>
+        <AnswerText isOpen={open}>
+          {scheduleText.map((item, index) => (
+            <p key={index}>
+              <BoldText>
+                Тема {index + 1} {item.title} :
+              </BoldText>{' '}
+              <NormalText>{item.description}</NormalText>
+            </p>
+          ))}
+        </AnswerText>
       </ExtraContainer>
     </Container>
   );

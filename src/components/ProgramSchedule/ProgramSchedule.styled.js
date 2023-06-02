@@ -180,3 +180,39 @@ export const AnswerText = styled.p`
     padding: 0 40px;
   }
 `;
+
+export const BoldText = styled.p`
+  display: inline;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.3;
+  color: #000000;
+
+  @media ${device.tablet} {
+    font-size: 16px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 24px;
+  }
+`;
+
+export const NormalText = styled.p`
+  display: inline;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 11px;
+  color: #000000;
+
+  @media ${device.tablet} {
+    font-size: 16px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 24px;
+  }
+`;
