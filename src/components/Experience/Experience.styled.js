@@ -21,7 +21,7 @@ export const ExtraContainer = styled.div`
 
   @media ${device.laptop} {
     width: 1064px;
-    height: 777px;
+    height: 700px;
   }
 `;
 
@@ -61,7 +61,7 @@ export const TextContainer = styled.div`
 
   @media ${device.laptop} {
     width: 631px;
-    height: 713px;
+    height: 650px;
   }
 `;
 
@@ -110,7 +110,7 @@ export const Time = styled.p`
   @media ${device.laptop} {
     margin-bottom: 15px;
     font-size: 24px;
-    line-height: 1.33px;
+    line-height: 1.33;
   }
 `;
 

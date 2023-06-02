@@ -1,11 +1,54 @@
 import { Container } from 'components/styles.styled';
-import React from 'react';
-import { ExtraContainer } from './Article.styled';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import {
+  ExtraContainer,
+  Title,
+  Image,
+  Text,
+} from './Article.styled';
+import { useParams } from 'react-router-dom';
+import image from "../../images/images/IMG_4299.jpg"
 
 const Article = () => {
+  const { id } = useParams();
+  const [article, setArticle] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:8080/api/articles/${id}`
+        );
+        setArticle(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const changeTextWithLineBreaks = text => {
+    const textWithLineBreaks = text.replace(/\\n/g, '<br>');
+    return textWithLineBreaks;
+  };
+
   return (
     <Container>
-      <ExtraContainer>Article</ExtraContainer>
+      <ExtraContainer>
+        <Title>{article.title}</Title>
+        <Image src={image} alt={article.title} />
+          {article.content ? (
+            <Text
+              dangerouslySetInnerHTML={{
+                __html: changeTextWithLineBreaks(article.content),
+              }}
+            ></Text>
+          ) : (
+            <div></div>
+          )}
+      </ExtraContainer>
     </Container>
   );
 };
