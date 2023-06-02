@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/svitlana-ripka/static/css/main.9ba6d1d4.css",
-    "main.js": "/svitlana-ripka/static/js/main.d92abdf5.js",
+    "main.js": "/svitlana-ripka/static/js/main.7bc1573d.js",
     "static/js/793.bcf70735.chunk.js": "/svitlana-ripka/static/js/793.bcf70735.chunk.js",
     "static/js/506.a70b54f2.chunk.js": "/svitlana-ripka/static/js/506.a70b54f2.chunk.js",
     "static/js/469.732a1eaf.chunk.js": "/svitlana-ripka/static/js/469.732a1eaf.chunk.js",
-    "static/js/450.5681cf18.chunk.js": "/svitlana-ripka/static/js/450.5681cf18.chunk.js",
+    "static/js/939.8da938eb.chunk.js": "/svitlana-ripka/static/js/939.8da938eb.chunk.js",
     "static/js/30.3896d360.chunk.js": "/svitlana-ripka/static/js/30.3896d360.chunk.js",
     "static/js/443.8ce17bc9.chunk.js": "/svitlana-ripka/static/js/443.8ce17bc9.chunk.js",
     "static/js/533.effdfb0a.chunk.js": "/svitlana-ripka/static/js/533.effdfb0a.chunk.js",
@@ -28,11 +28,11 @@
     "static/media/down-arrow-svgrepo-com.svg": "/svitlana-ripka/static/media/down-arrow-svgrepo-com.088b038d18e8b36574ec4db7ef8ffd0a.svg",
     "static/media/tick-svgrepo-com.svg": "/svitlana-ripka/static/media/tick-svgrepo-com.48ed00e2053b0c6bcf6e8ba8a103dc57.svg",
     "main.9ba6d1d4.css.map": "/svitlana-ripka/static/css/main.9ba6d1d4.css.map",
-    "main.d92abdf5.js.map": "/svitlana-ripka/static/js/main.d92abdf5.js.map",
+    "main.7bc1573d.js.map": "/svitlana-ripka/static/js/main.7bc1573d.js.map",
     "793.bcf70735.chunk.js.map": "/svitlana-ripka/static/js/793.bcf70735.chunk.js.map",
     "506.a70b54f2.chunk.js.map": "/svitlana-ripka/static/js/506.a70b54f2.chunk.js.map",
     "469.732a1eaf.chunk.js.map": "/svitlana-ripka/static/js/469.732a1eaf.chunk.js.map",
-    "450.5681cf18.chunk.js.map": "/svitlana-ripka/static/js/450.5681cf18.chunk.js.map",
+    "939.8da938eb.chunk.js.map": "/svitlana-ripka/static/js/939.8da938eb.chunk.js.map",
     "30.3896d360.chunk.js.map": "/svitlana-ripka/static/js/30.3896d360.chunk.js.map",
     "443.8ce17bc9.chunk.js.map": "/svitlana-ripka/static/js/443.8ce17bc9.chunk.js.map",
     "533.effdfb0a.chunk.js.map": "/svitlana-ripka/static/js/533.effdfb0a.chunk.js.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.9ba6d1d4.css",
-    "static/js/main.d92abdf5.js"
+    "static/js/main.7bc1573d.js"
   ]
 }
