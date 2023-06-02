@@ -64,8 +64,8 @@ export const List = styled.ul`
 
   @media ${device.tablet} {
     width: 676px;
+    height: 290px;
     margin-bottom: -70px;
-    height: 250px;
     position: relative;
 
     &::before {
@@ -73,7 +73,7 @@ export const List = styled.ul`
       width: 677px;
       height: 2px;
       background-color: #e4e4e7;
-      width: 848px;
+
       position: absolute;
       top: 50%;
       left: 50%;
@@ -85,6 +85,18 @@ export const List = styled.ul`
     width: 742px;
     margin-bottom: -85px;
     height: 313px;
+
+    &::before {
+      content: '';
+      width: 848px;
+      height: 2px;
+      background-color: #e4e4e7;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 `;
 
@@ -100,8 +112,8 @@ export const Item = styled.li`
   }
 
   @media ${device.tablet} {
-    margin-bottom: 70x;
-    height: 98.24px;
+    margin-bottom: 80x;
+    height: 120px;
   }
 
   @media ${device.laptop} {
