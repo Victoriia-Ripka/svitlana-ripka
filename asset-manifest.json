@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/svitlana-ripka/static/css/main.9ba6d1d4.css",
-    "main.js": "/svitlana-ripka/static/js/main.a8f7a9db.js",
+    "main.js": "/svitlana-ripka/static/js/main.ad696d80.js",
     "static/js/793.ddcc2bec.chunk.js": "/svitlana-ripka/static/js/793.ddcc2bec.chunk.js",
-    "static/js/506.d26dd7f4.chunk.js": "/svitlana-ripka/static/js/506.d26dd7f4.chunk.js",
+    "static/js/506.edffb38f.chunk.js": "/svitlana-ripka/static/js/506.edffb38f.chunk.js",
     "static/js/469.07751363.chunk.js": "/svitlana-ripka/static/js/469.07751363.chunk.js",
     "static/js/450.5463a373.chunk.js": "/svitlana-ripka/static/js/450.5463a373.chunk.js",
     "static/js/30.dab72bd6.chunk.js": "/svitlana-ripka/static/js/30.dab72bd6.chunk.js",
@@ -27,9 +27,9 @@
     "static/media/down-arrow-svgrepo-com.svg": "/svitlana-ripka/static/media/down-arrow-svgrepo-com.088b038d18e8b36574ec4db7ef8ffd0a.svg",
     "static/media/tick-svgrepo-com.svg": "/svitlana-ripka/static/media/tick-svgrepo-com.48ed00e2053b0c6bcf6e8ba8a103dc57.svg",
     "main.9ba6d1d4.css.map": "/svitlana-ripka/static/css/main.9ba6d1d4.css.map",
-    "main.a8f7a9db.js.map": "/svitlana-ripka/static/js/main.a8f7a9db.js.map",
+    "main.ad696d80.js.map": "/svitlana-ripka/static/js/main.ad696d80.js.map",
     "793.ddcc2bec.chunk.js.map": "/svitlana-ripka/static/js/793.ddcc2bec.chunk.js.map",
-    "506.d26dd7f4.chunk.js.map": "/svitlana-ripka/static/js/506.d26dd7f4.chunk.js.map",
+    "506.edffb38f.chunk.js.map": "/svitlana-ripka/static/js/506.edffb38f.chunk.js.map",
     "469.07751363.chunk.js.map": "/svitlana-ripka/static/js/469.07751363.chunk.js.map",
     "450.5463a373.chunk.js.map": "/svitlana-ripka/static/js/450.5463a373.chunk.js.map",
     "30.dab72bd6.chunk.js.map": "/svitlana-ripka/static/js/30.dab72bd6.chunk.js.map",
@@ -42,6 +42,6 @@
   },
   "entrypoints": [
     "static/css/main.9ba6d1d4.css",
-    "static/js/main.a8f7a9db.js"
+    "static/js/main.ad696d80.js"
   ]
 }
