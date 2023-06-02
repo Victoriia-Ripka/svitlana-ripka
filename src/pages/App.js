@@ -8,7 +8,7 @@ const ConsultationsPage = React.lazy(() =>
 const ProgramPage = React.lazy(() => import('./Program/Program'));
 const ArticlesPage = React.lazy(() => import('./Articles/Articles'));
 const ArticlePage = React.lazy(() => import('./Article/Article'));
-// const NotFoundPage = React.lazy(() => import('./NotFound/NotFound'));
+const NotFoundPage = React.lazy(() => import('./NotFound/NotFound'));
 const Layout = React.lazy(() => import('../components/Layout'));
 
 function App() {
@@ -23,9 +23,8 @@ function App() {
           <Route path="program-for-parents" element={<ProgramPage />} />
           <Route path="articles" element={<ArticlesPage />} />
           <Route path="articles/:id" element={<ArticlePage />} />
+          <Route path="*" element={<NotFoundPage />}></Route>
         </Route>
-        {/* <NotFound /> */}
-        <Route path="*" element={<p>Not Found...</p>}></Route>
       </Routes>
     </Suspense>
   );
