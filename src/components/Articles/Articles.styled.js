@@ -83,7 +83,7 @@ export const Item = styled.li`
   padding: 30px 10px;
 
   &:nth-child(2n + 2) {
-    background-color: rgba(217, 217, 217, 0.2);
+    background-color: rgba(217, 217, 217, 0.3);
   }
 
   @media ${device.mobileTablet} {
@@ -92,12 +92,12 @@ export const Item = styled.li`
   }
 
   @media ${device.tablet} {
-    height: 181px;
+    height: 220px;
     padding: 20px 20px;
   }
 
   @media ${device.laptop} {
-    height: 250px;
+    height: 290px;
     padding: 30px 20px;
   }
 `;
