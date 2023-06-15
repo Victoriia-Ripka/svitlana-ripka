@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
+import image from '../../images/png/arrow-right.png';
 
 export const ReviewsContainer = styled.div`
   margin: 0 auto;
@@ -21,7 +22,7 @@ export const ReviewsContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 15px;
   line-height: 1.3;
@@ -56,52 +57,10 @@ export const Slides = styled.div`
   }
 `;
 
-export const NextButton = styled.div`
-  height: 25px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #594d46;
-  &:hover,
-  &:focus {
-    color: black;
-    transform: scale(1.3);
-  }
-
-  transition: 0.3s;
-
-  @media ${device.mobileTablet} {
-    transform: scale(1.3);
-    &:hover,
-    &:focus {
-      color: black;
-      transform: scale(1.5);
-    }
-  }
-
-  @media ${device.tablet} {
-    transform: scale(1.5);
-    &:hover,
-    &:focus {
-      color: black;
-      transform: scale(1.8);
-    }
-  }
-
-  @media ${device.laptop} {
-    transform: scale(2);
-    &:hover,
-    &:focus {
-      color: black;
-      transform: scale(2.4);
-    }
-  }
-`;
+export const NextButton = styled.div``;
 
 export const SlideContainer = styled.div`
-  display: ${({ active }) => (active ? "block" : "none")};
+  display: ${({ active }) => (active ? 'block' : 'none')};
 `;
 
 export const Slide = styled.div`
@@ -165,7 +124,7 @@ export const UserInfo = styled.div`
 `;
 
 export const Name = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -183,7 +142,7 @@ export const Name = styled.p`
 `;
 
 export const Country = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -198,7 +157,7 @@ export const Country = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -220,7 +179,7 @@ export const Text = styled.p`
 `;
 
 export const Review = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -235,5 +194,92 @@ export const Review = styled.p`
   @media ${device.laptop} {
     font-size: 20px;
     margin-top: 10px;
+  }
+`;
+
+export const ArrowBack = styled.img`
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background-image: url(${image});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  color: white;
+  // border: green solid 3px;
+
+  transform: rotate(90deg);
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+
+  @media ${device.mobileTablet} {
+    transform: scale(1.3);
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+  }
+
+  @media ${device.tablet} {
+    transform: scale(1.5);
+    &:hover,
+    &:focus {
+      transform: scale(1.8);
+    }
+  }
+
+  @media ${device.laptop} {
+    transform: scale(2);
+    &:hover,
+    &:focus {
+      transform: scale(2.4);
+    }
+  }
+`;
+
+export const ArrowNext = styled.img`
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background-image: url(${image});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: rotate(90deg);
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+
+  @media ${device.mobileTablet} {
+    transform: scale(1.3);
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+  }
+
+  @media ${device.tablet} {
+    transform: scale(1.5);
+    &:hover,
+    &:focus {
+      transform: scale(1.8);
+    }
+  }
+
+  @media ${device.laptop} {
+    transform: scale(2);
+    &:hover,
+    &:focus {
+      transform: scale(2.4);
+    }
   }
 `;

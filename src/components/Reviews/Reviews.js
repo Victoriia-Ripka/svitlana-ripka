@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container } from "../styles.styled";
+import React, { useState } from 'react';
+import { Container } from '../styles.styled';
 import {
   ReviewsContainer,
   Title,
@@ -15,12 +15,13 @@ import {
   Text,
   Review,
   NextButton,
-} from "./Reviews.styled";
-import { RxAvatar } from "react-icons/rx";
-import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import { IconContext } from "react-icons";
-import ReviewsArray from "../../data/reviews.json";
-import { Modal } from "./Modal";
+  ArrowNext,
+  ArrowBack,
+} from './Reviews.styled';
+import { RxAvatar } from 'react-icons/rx';
+import { IconContext } from 'react-icons';
+import ReviewsArray from '../../data/reviews.json';
+import { Modal } from './Modal';
 
 const Reviews = () => {
   const reviewsCount = ReviewsArray.length;
@@ -37,8 +38,8 @@ const Reviews = () => {
     setActiveIndex(indexWillbe);
   };
 
-  const cutText = (text) => {
-    const newText = text.slice(0, 400) + "...";
+  const cutText = text => {
+    const newText = text.slice(0, 400) + '...';
     return newText;
   };
 
@@ -51,11 +52,7 @@ const Reviews = () => {
       <ReviewsContainer>
         <Title>Відгуки моїх клієнтів</Title>
         <Slides>
-          <NextButton id="prev" onClick={getPrev}>
-            <IconContext.Provider value={{ size: "auto" }}>
-              <MdArrowBackIosNew />
-            </IconContext.Provider>
-          </NextButton>
+          <ArrowBack id="prev" onClick={getPrev}></ArrowBack>
           {ReviewsArray.map((item, index) => {
             return (
               <SlideContainer
@@ -66,7 +63,7 @@ const Reviews = () => {
                   <User>
                     <Info>
                       <AvatarDiv>
-                        <IconContext.Provider value={{ size: "auto" }}>
+                        <IconContext.Provider value={{ size: 'auto' }}>
                           <RxAvatar />
                         </IconContext.Provider>
                       </AvatarDiv>
@@ -82,11 +79,7 @@ const Reviews = () => {
               </SlideContainer>
             );
           })}
-          <NextButton id="next" onClick={getNext}>
-            <IconContext.Provider value={{ size: "auto" }}>
-              <MdArrowForwardIos />
-            </IconContext.Provider>
-          </NextButton>
+          <ArrowNext id="next" onClick={getNext}></ArrowNext>
         </Slides>
       </ReviewsContainer>
       <Modal index={activeIndex} open={open} setOpenModal={setOpen} />

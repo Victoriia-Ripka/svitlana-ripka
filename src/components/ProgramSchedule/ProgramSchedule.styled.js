@@ -126,7 +126,6 @@ export const ImgContainer = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
 
-  // transform: ${({ isOpen }) => (isOpen ? 'rotete(180deg)' : 'rotete(0)')};
   transform: ${({ isOpen }) =>
     isOpen ? 'translateY(-50%) rotate(180deg)' : ''};
   transition: all 0.5s ease;
