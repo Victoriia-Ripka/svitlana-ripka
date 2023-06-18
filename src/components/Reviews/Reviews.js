@@ -6,7 +6,6 @@ import {
   SlideContainer,
   Slides,
   Slide,
-  User,
   Info,
   AvatarDiv,
   UserInfo,
@@ -14,13 +13,11 @@ import {
   Country,
   Text,
   Review,
-  NextButton,
   ArrowNext,
   ArrowBack,
 } from './Reviews.styled';
-import { RxAvatar } from 'react-icons/rx';
-import { IconContext } from 'react-icons';
 import ReviewsArray from '../../data/reviews.json';
+import image from '../../images/png/arrow-right.png';
 import { Modal } from './Modal';
 
 const Reviews = () => {
@@ -52,7 +49,7 @@ const Reviews = () => {
       <ReviewsContainer>
         <Title>Відгуки моїх клієнтів</Title>
         <Slides>
-          <ArrowBack id="prev" onClick={getPrev}></ArrowBack>
+          <ArrowBack src={image} id="prev" onClick={getPrev}></ArrowBack>
           {ReviewsArray.map((item, index) => {
             return (
               <SlideContainer
@@ -60,26 +57,25 @@ const Reviews = () => {
                 active={activeIndex === index ? true : false}
               >
                 <Slide onClick={handleClick}>
-                  <User>
-                    <Info>
-                      <AvatarDiv>
-                        <IconContext.Provider value={{ size: 'auto' }}>
-                          <RxAvatar />
-                        </IconContext.Provider>
-                      </AvatarDiv>
-                      <UserInfo>
-                        <Name>{item.name}</Name>
-                        <Country>{item.country} </Country>
-                      </UserInfo>
-                    </Info>
-                    <Text>{item.type}</Text>
-                    <Review>{cutText(item.review)}</Review>
-                  </User>
+                  <Info>
+                    <AvatarDiv>
+                      <img
+                        src="../../images/png/boy-avatar-30.png"
+                        alt="avatar"
+                      />
+                    </AvatarDiv>
+                    <UserInfo>
+                      <Name>{item.name}</Name>
+                      <Country>{item.country} </Country>
+                    </UserInfo>
+                  </Info>
+                  <Text>{item.type}</Text>
+                  <Review>{cutText(item.review)}</Review>
                 </Slide>
               </SlideContainer>
             );
           })}
-          <ArrowNext id="next" onClick={getNext}></ArrowNext>
+          <ArrowNext src={image} id="next" onClick={getNext}></ArrowNext>
         </Slides>
       </ReviewsContainer>
       <Modal index={activeIndex} open={open} setOpenModal={setOpen} />

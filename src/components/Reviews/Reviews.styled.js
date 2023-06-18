@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device';
-import image from '../../images/png/arrow-right.png';
 
 export const ReviewsContainer = styled.div`
   margin: 0 auto;
@@ -57,8 +56,6 @@ export const Slides = styled.div`
   }
 `;
 
-export const NextButton = styled.div``;
-
 export const SlideContainer = styled.div`
   display: ${({ active }) => (active ? 'block' : 'none')};
 `;
@@ -85,8 +82,6 @@ export const Slide = styled.div`
     height: 320px;
   }
 `;
-
-export const User = styled.div``;
 
 export const AvatarDiv = styled.div`
   width: 30px;
@@ -201,15 +196,7 @@ export const ArrowBack = styled.img`
   height: 25px;
   width: 25px;
   cursor: pointer;
-  background-image: url(${image});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: white;
-  // border: green solid 3px;
-
-  transform: rotate(90deg);
+  transform: rotate(180deg);
   transition: 0.3s;
 
   &:hover,
@@ -218,26 +205,26 @@ export const ArrowBack = styled.img`
   }
 
   @media ${device.mobileTablet} {
-    transform: scale(1.3);
+    transform: rotate(180deg) scale(1.3);
     &:hover,
     &:focus {
-      transform: scale(1.5);
+      transform: rotate(180deg) scale(1.5);
     }
   }
 
   @media ${device.tablet} {
-    transform: scale(1.5);
+    transform: rotate(180deg) scale(1.5);
     &:hover,
     &:focus {
-      transform: scale(1.8);
+      transform: rotate(180deg) scale(1.8);
     }
   }
 
   @media ${device.laptop} {
-    transform: scale(2);
+    transform: rotate(180deg) scale(2);
     &:hover,
     &:focus {
-      transform: scale(2.4);
+      transform: rotate(180deg) scale(2.4);
     }
   }
 `;
@@ -246,12 +233,6 @@ export const ArrowNext = styled.img`
   height: 25px;
   width: 25px;
   cursor: pointer;
-  background-image: url(${image});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  transform: rotate(90deg);
   transition: 0.3s;
 
   &:hover,
