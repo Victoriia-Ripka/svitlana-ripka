@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { RxCrossCircled } from "react-icons/rx";
+import React, { useEffect } from 'react';
+import { RxCrossCircled } from 'react-icons/rx';
 import {
   Backdrop,
   ModalDiv,
@@ -12,34 +12,34 @@ import {
   Country,
   Text,
   Review,
-} from "./Modal.styled.js";
-import ReviewsArray from "../../data/reviews.json";
-import { IconContext } from "react-icons";
-import { RxAvatar } from "react-icons/rx";
+} from './Modal.styled.js';
+import ReviewsArray from '../../data/reviews.json';
+import boyAvatar from '../../images/png/boy-avatar-80.png';
+import girlAvatar from '../../images/png/girl-avatar-80.png';
 
 export const Modal = ({ index, open, setOpenModal }) => {
   const client = ReviewsArray[index];
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   });
 
-  const close = (open) => setOpenModal(!open);
+  const close = open => setOpenModal(!open);
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") {
+  const handleKeyDown = e => {
+    if (e.key === 'Escape') {
       close(open);
     }
   };
 
-  const handleBackdropClick = (e) => {
+  const handleBackdropClick = e => {
     if (e.target === e.currentTarget) {
       close(open);
     }
   };
 
-  const handleButton = (e) => {
+  const handleButton = e => {
     close(open);
   };
 
@@ -52,9 +52,7 @@ export const Modal = ({ index, open, setOpenModal }) => {
         <User>
           <Info>
             <AvatarDiv>
-              <IconContext.Provider value={{ size: "auto" }}>
-                <RxAvatar />
-              </IconContext.Provider>
+              <img src={client.sex ? boyAvatar : girlAvatar} alt="avatar" />
             </AvatarDiv>
             <UserInfo>
               <Name>

@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
 
 export const Backdrop = styled.div`
-  display: ${({ open }) => (open ? "flex" : "none")};
-  position: ${({ open }) => (open ? "fixed" : "absolute")};
-  overflow: ${({ open }) => (open ? "" : "hidden")};
-  pointer-events: ${({ open }) => (open ? "" : "none")};
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  position: ${({ open }) => (open ? 'fixed' : 'absolute')};
+  overflow: ${({ open }) => (open ? '' : 'hidden')};
+  pointer-events: ${({ open }) => (open ? '' : 'none')};
   top: 0;
   left: 0;
   z-index: 50;
@@ -16,7 +16,7 @@ export const Backdrop = styled.div`
 
 export const ModalDiv = styled.div`
   background: white;
-  padding: 35px 8px;
+  padding: 35px 25px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,12 +25,25 @@ export const ModalDiv = styled.div`
   position: relative;
   overflow: auto;
 
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    margin: 30px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #594d46;
+  }
+
   @media ${device.mobileTablet} {
     width: 70%;
     height: 90%;
     max-width: 500px;
     max-height: 400px;
-    padding: 25px 25px;
+    padding: 35px 35px;
     margin: auto;
     border: 1px solid #594d46;
     border-radius: 25px;
@@ -60,6 +73,15 @@ export const CloseButton = styled.div`
     transform: scale(1.5);
   }
 
+  @media ${device.mobileTablet} {
+    transform: scale(1.2);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+  }
+
   @media ${device.tablet} {
     transform: scale(1.5);
 
@@ -73,17 +95,20 @@ export const CloseButton = styled.div`
 export const User = styled.div``;
 
 export const AvatarDiv = styled.div`
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #d9d9d9;
-  object-fit: cover;
+  width: 50px;
+  height: 50px;
 
   @media ${device.mobileTablet} {
-    transform: scale(1.1);
+    width: 60px;
+    height: 60px;
   }
   @media ${device.tablet} {
-    transform: scale(1.7);
+    width: 70px;
+    height: 70px;
+  }
+  @media ${device.laptop} {
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -105,7 +130,7 @@ export const UserInfo = styled.div`
 `;
 
 export const Name = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 20px;
   line-height: 1.3;
@@ -123,7 +148,7 @@ export const Name = styled.p`
 `;
 
 export const Country = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
@@ -138,8 +163,8 @@ export const Country = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "Lora";
-  font-weight: 400;
+  font-family: 'Lora';
+  font-weight: 600;
   font-size: 15px;
   line-height: 1.4;
   margin-top: 10px;
@@ -156,12 +181,12 @@ export const Text = styled.p`
   }
   @media ${device.laptop} {
     font-size: 20px;
-    font-size: 35px;
+    margin-top: 35px;
   }
 `;
 
 export const Review = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4;

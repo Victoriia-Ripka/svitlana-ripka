@@ -19,6 +19,8 @@ import {
 import ReviewsArray from '../../data/reviews.json';
 import image from '../../images/png/arrow-right.png';
 import { Modal } from './Modal';
+import boyAvatar from '../../images/png/boy-avatar-80.png';
+import girlAvatar from '../../images/png/girl-avatar-80.png';
 
 const Reviews = () => {
   const reviewsCount = ReviewsArray.length;
@@ -60,7 +62,7 @@ const Reviews = () => {
                   <Info>
                     <AvatarDiv>
                       <img
-                        src="../../images/png/boy-avatar-30.png"
+                        src={item.sex ? boyAvatar : girlAvatar}
                         alt="avatar"
                       />
                     </AvatarDiv>

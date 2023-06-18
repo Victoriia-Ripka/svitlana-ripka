@@ -3,16 +3,16 @@ import { device } from '../../styles/device';
 
 export const ReviewsContainer = styled.div`
   margin: 0 auto;
-  height: 390px;
+  height: 410px;
 
   @media ${device.mobileTablet} {
     width: 436px;
-    height: 300px;
+    height: 310px;
   }
 
   @media ${device.tablet} {
     width: 685px;
-    height: 330px;
+    height: 350px;
   }
   @media ${device.laptop} {
     width: 1070px;
@@ -62,20 +62,20 @@ export const SlideContainer = styled.div`
 
 export const Slide = styled.div`
   background: #ffffff;
-  border: 1px solid #594d46;
+  border: 2px solid #594d46;
   border-radius: 25px;
   padding: 25px;
   width: 240px;
-  height: 340px;
+  height: 360px;
   cursor: pointer;
 
   @media ${device.mobileTablet} {
     width: 340px;
-    height: 260px;
+    height: 270px;
   }
   @media ${device.tablet} {
     width: 585px;
-    height: 280px;
+    height: 300px;
   }
   @media ${device.laptop} {
     width: 900px;
@@ -84,20 +84,20 @@ export const Slide = styled.div`
 `;
 
 export const AvatarDiv = styled.div`
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #d9d9d9;
-  object-fit: cover;
+  width: 40px;
+  height: 40px;
 
   @media ${device.mobileTablet} {
-    transform: scale(1.1);
+    width: 40px;
+    height: 40px;
   }
   @media ${device.tablet} {
-    transform: scale(1.7);
+    width: 60px;
+    height: 60px;
   }
   @media ${device.laptop} {
-    transform: scale(2.5);
+    width: 80px;
+    height: 80px;
   }
 `;
 
@@ -114,7 +114,7 @@ export const UserInfo = styled.div`
     margin-left: 25px;
   }
   @media ${device.laptop} {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 `;
 
@@ -153,7 +153,7 @@ export const Country = styled.p`
 
 export const Text = styled.p`
   font-family: 'Lora';
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.3;
   margin-top: 10px;
