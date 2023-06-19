@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import background_phone from "../../images/images/mobile/hero_x1.jpg";
-import background_tablet from "../../images/images/tablet/hero_x1.jpg";
-import background_laptop from "../../images/images/laptop/hero_x1.jpg";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import background_phone from '../../images/images/mobile/hero_x1.jpg';
+import background_tablet from '../../images/images/tablet/hero_x1.jpg';
+import background_laptop from '../../images/images/laptop/hero_x1.jpg';
+import { device } from '../../styles/device';
 
 export const Section = styled.div`
   width: 100%;
-  height: 100%;
+  height: 390px;
   position: relative;
   margin: 0 auto;
   background-image: url(${background_phone});
@@ -39,7 +39,8 @@ export const Section = styled.div`
 
 export const Container = styled.section`
   width: 100%;
-  padding: 120px 8px;
+  height: 390px;
+  padding: 70px 8px;
   margin: 0 auto;
 
   @media ${device.mobileTablet} {
@@ -58,12 +59,12 @@ export const Container = styled.section`
 `;
 
 export const HeroContainer = styled.div`
-  height: 60vh;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
- @media ${device.mobileTablet} {
+  @media ${device.mobileTablet} {
     width: 445px;
     margin: 0 auto;
     height: 90%;
@@ -87,7 +88,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-@media ${device.mobileTablet} {
+  @media ${device.mobileTablet} {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,17 +104,18 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 500;
   font-size: 16px;
   width: 240px;
   line-height: 1.3;
-  color: #d9d9d9;
+  color: #ffffff;
 
   @media ${device.tablet} {
     width: 490px;
     font-size: 40px;
     text-align: center;
+    color: #d9d9d9;
   }
 
   @media ${device.laptop} {
@@ -123,7 +125,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -158,7 +160,7 @@ export const Button = styled.button`
   border-color: transparent;
   cursor: pointer;
 
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
