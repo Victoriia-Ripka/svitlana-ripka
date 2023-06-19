@@ -97,6 +97,7 @@ export const Link = styled.a`
   color: #594d46;
   margin-bottom: 10px;
   transition: 0.5s;
+  text-decoration-line: underline;
 
   &:hover,
   &:focus {

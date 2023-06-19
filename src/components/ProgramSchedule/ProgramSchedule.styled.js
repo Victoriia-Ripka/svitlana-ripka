@@ -1,6 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
 import { device } from '../../styles/device';
-import image from '../../images/svg/down-arrow-svgrepo-com.svg';
 
 const fadeIn = keyframes`
   from {
@@ -117,18 +116,11 @@ export const QuestionText = styled.div`
   }
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled.img`
   width: 15px;
   height: 15px;
-
-  background-image: url(${image});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  transform: ${({ isOpen }) =>
-    isOpen ? 'translateY(-50%) rotate(180deg)' : ''};
-  transition: all 0.5s ease;
+  transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : '')};
+  transition: all 0.3s ease;
 
   @media ${device.tablet} {
     width: 25px;

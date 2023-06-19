@@ -26,7 +26,7 @@ export const ExtraContainer = styled.div`
 
 export const Title = styled.h2`
   font-family: 'Lora';
-  font-weight: 700;
+  font-weight: 400;
   font-size: 15px;
   line-height: 3;
   text-align: center;
@@ -126,7 +126,7 @@ export const Item = styled.li`
 export const Number = styled.span`
   font-family: 'Lora';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   line-height: 1.3;
   text-align: center;

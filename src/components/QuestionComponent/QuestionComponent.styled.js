@@ -1,6 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
 import { device } from '../../styles/device';
-import image from '../../images/svg/down-arrow-svgrepo-com.svg';
 
 const fadeIn = keyframes`
   from {
@@ -22,7 +21,7 @@ const fadeInSecond = keyframes`
 
 export const Container = styled.div`
   position: relative;
-  width: 100%;
+  width: 300px;
   background: rgba(175, 157, 147, 0.48);
   border-radius: 10px;
   margin: 0 0 15px 0;
@@ -73,19 +72,11 @@ export const QuestionText = styled.div`
   }
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled.img`
   width: 15px;
   height: 15px;
-
-  background-image: url(${image});
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  // transform: ${({ isOpen }) => (isOpen ? 'rotete(180deg)' : 'rotete(0)')};
-  transform: ${({ isOpen }) =>
-    isOpen ? 'translateY(-50%) rotate(180deg)' : ''};
-  transition: all 0.5s ease;
+  transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : '')};
+  transition: all 0.7s ease;
 
   @media ${device.tablet} {
     width: 25px;
@@ -117,6 +108,7 @@ export const AnswerText = styled.p`
   color: #000000;
   padding: 0 12px;
   margin: 0 0 15px 0;
+  width: 300px;
 
   @media ${device.mobileTablet} {
     width: 435px;

@@ -12,6 +12,7 @@ import {
 } from './ProgramSchedule.styled';
 import { ExtraContainer } from 'components/ProgramBenefits/ProgramBenefits.styled';
 import scheduleText from '../../data/schedule.json';
+import image from '../../images/svg/down-arrow-svgrepo-com.svg';
 
 const ProgramSchedule = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ const ProgramSchedule = () => {
         </TextContainer>
         <ContainerAnswer onClick={() => toggleSchedule()}>
           <QuestionText>Теми занять</QuestionText>
-          <ImgContainer></ImgContainer>
+          <ImgContainer src={image} alt="cross" isOpen={open} />
         </ContainerAnswer>
         <AnswerText isOpen={open}>
           {scheduleText.map((item, index) => (

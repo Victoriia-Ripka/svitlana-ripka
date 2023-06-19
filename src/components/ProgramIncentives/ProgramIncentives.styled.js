@@ -110,6 +110,7 @@ export const Link = styled.a`
   font-size: 11px;
   line-height: 1.3;
   display: block-inline;
+  text-decoration-line: underline;
 
   color: rgb(89, 77, 70);
   padding: 10px 5px;
