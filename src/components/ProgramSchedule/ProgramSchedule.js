@@ -36,14 +36,14 @@ const ProgramSchedule = () => {
         </ContainerAnswer>
         <AnswerText isOpen={open}>
           {scheduleText.map((item, index) => (
-            <p key={index}>
+            <div key={index}>
               <BoldText>
                 Тема {index + 1} {item.title} :
               </BoldText>{' '}
               <NormalText>{item.description}</NormalText>
-            </p>
+            </div>
           ))}
-        </AnswerText>
+        </AnswerText>  
       </ExtraContainer>
     </Container>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   MenuContainer,
   ContentContainer,
@@ -6,11 +6,11 @@ import {
   MenuList,
   MenuItem,
   MenuLink,
-} from "./ModalMenu.styled";
-import Modal from "../Modal/Modal";
-import { useLocation } from "react-router-dom";
+} from './ModalMenu.styled';
+import Modal from '../Modal/Modal';
+import { useLocation } from 'react-router-dom';
 
-const ModalMenu = ({ open }) => {
+const ModalMenu = ({ open, close }) => {
   const [openModal, setOpenModal] = useState(false);
   const { pathname } = useLocation();
 
@@ -23,14 +23,19 @@ const ModalMenu = ({ open }) => {
       <ContentContainer>
         <MenuList>
           <MenuItem>
-            <MenuLink to="/" className={pathname === "/" ? "active" : null}>
+            <MenuLink
+              to="/"
+              className={pathname === '/' ? 'active' : null}
+              onClick={() => close(!open)}
+            >
               головна
             </MenuLink>
           </MenuItem>
           <MenuItem>
             <MenuLink
               to="/about"
-              className={pathname === "/about" ? "active" : null}
+              className={pathname === '/about' ? 'active' : null}
+              onClick={() => close(!open)}
             >
               про мене
             </MenuLink>
@@ -38,7 +43,8 @@ const ModalMenu = ({ open }) => {
           <MenuItem>
             <MenuLink
               to="/consultations"
-              className={pathname === "/consultations" ? "active" : null}
+              className={pathname === '/consultations' ? 'active' : null}
+              onClick={() => close(!open)}
             >
               консультації
             </MenuLink>
@@ -46,7 +52,8 @@ const ModalMenu = ({ open }) => {
           <MenuItem>
             <MenuLink
               to="/program-for-parents"
-              className={pathname === "/program-for-parents" ? "active" : null}
+              className={pathname === '/program-for-parents' ? 'active' : null}
+              onClick={() => close(!open)}
             >
               програма для батьків
             </MenuLink>
@@ -54,7 +61,8 @@ const ModalMenu = ({ open }) => {
           <MenuItem>
             <MenuLink
               to="/articles"
-              className={pathname === "/articles" ? "active" : null}
+              className={pathname === '/articles' ? 'active' : null}
+              onClick={() => close(!open)}
             >
               статті
             </MenuLink>

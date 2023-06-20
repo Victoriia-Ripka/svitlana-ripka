@@ -10,7 +10,7 @@ const ProgramPage = () => {
     <>
       <ProgramIncentives />
       <ProgramBenefits />
-      <ProgramResult />
+       <ProgramResult />
       <ProgramSchedule />
       <ProgrammAddInfo />
     </>

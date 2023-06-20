@@ -75,7 +75,7 @@ const HeaderComponent = () => {
             записатися на консультацію
           </Button>
           <Burger />
-          <Modal open={openModal} setOpenModal={setOpenModal} />
+          <Modal open={openModal} close={setOpenModal} setOpenModal={setOpenModal} />
         </HeaderContent>
       </HeaderContainer>
       <ExtraDiv></ExtraDiv>
