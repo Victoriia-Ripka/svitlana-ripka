@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
 
 export const AimContainer = styled.div`
   margin: 0 auto;
@@ -65,7 +65,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 500;
   font-size: 15px;
   line-height: 1.3;
@@ -89,7 +89,7 @@ export const Title = styled.h2`
 export const List = styled.ul``;
 
 export const Aims = styled.li`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -101,7 +101,7 @@ export const Aims = styled.li`
   }
 
   @media ${device.tablet} {
-    font-size: 20px;
+    font-size: 18px;
     width: 270px;
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -109,7 +109,7 @@ export const Aims = styled.li`
   }
 
   @media ${device.laptop} {
-    font-size: 24px;
+    font-size: 20px;
     width: 450px;
   }
 `;
@@ -123,8 +123,8 @@ export const ImgContainer = styled.div`
   align-items: center;
 
   @media ${device.mobileTablet} {
-    width: 218px;
-    height: 314px;
+    width: 210px;
+    height: 290px;
   }
 
   @media ${device.tablet} {
@@ -143,7 +143,7 @@ export const Img = styled.img`
   width: 171px;
 
   @media ${device.mobileTablet} {
-    width: 177px;
+    width: 160px;
   }
   @media ${device.tablet} {
     width: 233px;
@@ -158,7 +158,7 @@ export const Img = styled.img`
 
 export const Text = styled.p`
   margin: 20px auto 0;
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 13px;
   line-height: 1.3;
@@ -171,13 +171,13 @@ export const Text = styled.p`
     width: 340px;
   }
   @media ${device.tablet} {
-    font-size: 24px;
+    font-size: 20px;
     width: 636px;
     margin: 50px auto 0;
   }
 
   @media ${device.laptop} {
-    font-size: 32px;
+    font-size: 24px;
     width: 746px;
     margin: 60px auto 0;
   }

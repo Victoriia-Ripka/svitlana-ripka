@@ -12,15 +12,17 @@ export const GreetingContainer = styled.div`
   @media ${device.mobileTablet} {
     width: 445px;
     margin: 0 auto;
+    justify-content: space-between;
   }
   @media ${device.tablet} {
     width: 685px;
-    height: 560px;
+    height: 500px;
   }
   @media ${device.laptop} {
     width: 1070px;
-    height: 640px;
+    height: 600px;
     margin: 40px auto 0;
+    justify-content: center;
   }
 `;
 
@@ -44,7 +46,7 @@ export const ImgContainer = styled.div`
 
   @media ${device.laptop} {
     width: 450px;
-    height: 637px;
+    height: 600px;
   }
 `;
 
@@ -60,7 +62,7 @@ export const Img = styled.img`
   }
 
   @media ${device.laptop} {
-    width: 360px;
+    width: 320px;
   }
 `;
 
@@ -81,7 +83,7 @@ export const TextContainer = styled.div`
 
   @media ${device.mobileTablet} {
     width: 206px;
-    margin-left: 10px;
+    margin-left: 0;
     position: static;
     transform: translateX(0);
   }
@@ -103,7 +105,7 @@ export const Text = styled.div`
   font-family: "Lora";
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.3;
   color: #000000;
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -111,8 +113,7 @@ export const Text = styled.div`
 
   @media ${device.tablet} {
     width: 365px;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -120,8 +121,7 @@ export const Text = styled.div`
 
   @media ${device.laptop} {
     width: 520px;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 20px;
     &:not(:last-child) {
       margin-bottom: 15px;
     }

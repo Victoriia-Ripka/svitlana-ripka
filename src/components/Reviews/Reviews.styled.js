@@ -201,7 +201,7 @@ export const ArrowBack = styled.img`
 
   &:hover,
   &:focus {
-    transform: scale(1.3);
+    transform: rotate(180deg) scale(1.3);
   }
 
   @media ${device.mobileTablet} {

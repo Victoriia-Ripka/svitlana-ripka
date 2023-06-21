@@ -104,7 +104,8 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 120px;
 
   @media ${device.mobileTablet} {
     margin-bottom: 25px;
@@ -153,7 +154,7 @@ export const Description = styled.p`
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.7;
   text-align: center;
   color: #52525b;
