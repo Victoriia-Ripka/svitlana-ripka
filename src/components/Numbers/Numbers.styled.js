@@ -67,18 +67,6 @@ export const List = styled.ul`
     height: 290px;
     margin-bottom: -70px;
     position: relative;
-
-    &::before {
-      content: '';
-      width: 677px;
-      height: 2px;
-      background-color: #e4e4e7;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
 
   @media ${device.laptop} {
@@ -115,12 +103,13 @@ export const Item = styled.li`
   @media ${device.tablet} {
     margin-bottom: 80x;
     height: 120px;
+    width: 160px;
   }
 
   @media ${device.laptop} {
     margin-bottom: 85px;
     height: 105.88px;
-    width: 198.11px;
+    width: 200px;
   }
 `;
 
