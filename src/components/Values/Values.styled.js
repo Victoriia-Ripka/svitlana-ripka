@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device';
-import image_mobile from '../../images/images/mobile/values_x1.jpg';
-import image_mobileTablet from '../../images/images/mobileTablet/values_x1.jpg';
-import image_tablet from '../../images/images/tablet/values_x1.jpg';
-import image_laptop from '../../images/images/laptop/values_x1.jpg';
 
 export const ValuesContainer = styled.div`
   margin: 0 auto;
@@ -76,27 +72,23 @@ export const ImageBackground = styled.div`
   }
 `;
 
-export const Image = styled.div`
-  background-image: url(${image_mobile});
+export const Image = styled.img`
   width: 117px;
   height: 145px;
 
   @media ${device.mobileTablet} {
-    background-image: url(${image_mobileTablet});
     width: 168px;
     height: 208px;
   }
 
   @media ${device.tablet} {
-    background-image: url(${image_tablet});
-    width: 270px;
+    width: 280px;
     height: 354.79px;
   }
 
   @media ${device.laptop} {
-    background-image: url(${image_laptop});
     width: 400px;
-    height: 494.53px;
+    height: 495px;
   }
 `;
 

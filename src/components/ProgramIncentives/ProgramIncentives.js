@@ -6,8 +6,10 @@ import {
   Image,
   Link,
   IncentivesContainer,
-  TextContainer, InfoContainer
+  TextContainer,
+  InfoContainer,
 } from './ProgramIncentives.styled';
+import img_laptop from '../../images/images/laptop/program_x1.jpg';
 
 const ProgramIncentives = () => {
   return (
@@ -27,7 +29,7 @@ const ProgramIncentives = () => {
               https://forms.gle/TbgMsXoraFGezJ7u9{' '}
             </Link>
           </TextContainer>
-          <Image></Image>
+          <Image src={img_laptop} alt="family" />
         </InfoContainer>
       </IncentivesContainer>
     </Container>

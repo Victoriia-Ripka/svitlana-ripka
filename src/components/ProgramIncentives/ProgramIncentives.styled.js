@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 import { device } from 'styles/device';
-import img_mobile from '../../images/images/mobile/program_x1.jpg';
-import img_mobileTablet from '../../images/images/mobileTablet/program_x1.jpg';
-import img_tablet from '../../images/images/tablet/program_x1.jpg';
-import img_laptop from '../../images/images/laptop/program_x1.jpg';
 
 export const IncentivesContainer = styled.div`
   display: flex;
@@ -132,25 +128,21 @@ export const Link = styled.a`
   }
 `;
 
-export const Image = styled.div`
+export const Image = styled.img`
   width: 304px;
   height: 272px;
   margin 0 auto;
-  background-image: url(${img_mobile});
 
   @media ${device.mobileTablet} {
-    background-image: url(${img_mobileTablet});
     width: 208px;
     height: 196px;
   }
 
   @media ${device.tablet} {
-    background-image: url(${img_tablet});
     width: 290px;
     height: 290px;
   }
   @media ${device.laptop} {
-    background-image: url(${img_laptop});
     width: 450px;
     height: 450px;
   }
