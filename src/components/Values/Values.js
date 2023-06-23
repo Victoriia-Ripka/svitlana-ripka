@@ -11,8 +11,7 @@ import {
   LastText,
   FirstTextMobile,
 } from './Values.styled';
-import image_laptop from '../../images/images/laptop/values_x1.jpg';
-
+import image from '../../images/images/values_x1.jpg';
 
 const Values = () => {
   return (
@@ -27,7 +26,7 @@ const Values = () => {
         </FirstTextMobile>
         <MainContentContainer>
           <ImageBackground>
-            <Image src={image_laptop } alt="Svitlana Ripka"/>
+            <Image src={image} alt="Svitlana Ripka" loading="lazy" />
           </ImageBackground>
           <TextContainer>
             <FirstText>

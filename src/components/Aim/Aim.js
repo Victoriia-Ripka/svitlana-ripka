@@ -1,6 +1,7 @@
-import React from "react";
-import { Container } from "../styles.styled";
-import image from "../../images/png/goal_x1.png";
+import React from 'react';
+import { Container } from '../styles.styled';
+import image_x1 from '../../images/images/goal_x1.jpg';
+import image_x2 from '../../images/images/goal_x2.jpg';
 import {
   AimContainer,
   TextContainer,
@@ -11,11 +12,11 @@ import {
   Img,
   ImgContainer,
   ExtraContainer,
-} from "./Aim.styled";
+} from './Aim.styled';
 
 const Aim = () => {
   return (
-    <div style={{ background: "rgba(217, 217, 217, 0.2)" }}>
+    <div style={{ background: 'rgba(217, 217, 217, 0.2)' }}>
       <Container>
         <AimContainer>
           <ExtraContainer>
@@ -37,7 +38,12 @@ const Aim = () => {
               </List>
             </TextContainer>
             <ImgContainer>
-              <Img src={image} alt="white flowers and notes" loading="lazy" />
+              <Img
+                srcset={`${image_x1} 1x, ${image_x2} 2x`}
+                src={image_x1}
+                alt="white flowers and notes"
+                loading="lazy"
+              />
             </ImgContainer>
           </ExtraContainer>
           <Text>

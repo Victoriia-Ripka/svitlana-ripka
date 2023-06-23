@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
 
 export const GreetingContainer = styled.div`
   display: flex;
@@ -52,7 +52,8 @@ export const ImgContainer = styled.div`
 
 export const Img = styled.img`
   display: block;
-  width: 147px;
+  width: 145px;
+  object-fit: cover;
 
   @media ${device.mobileTablet} {
     width: 175px;
@@ -102,7 +103,7 @@ export const TextContainer = styled.div`
 
 export const Text = styled.div`
   width: 185px;
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;

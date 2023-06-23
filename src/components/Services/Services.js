@@ -12,6 +12,7 @@ import {
   Text,
   Image,
 } from './Services.styled';
+import image from '../../images/images/services_x1.jpg';
 
 const Services = () => {
   const [activeType, setActiveType] = useState([
@@ -79,19 +80,15 @@ const Services = () => {
             if (item.open) {
               return (
                 <TextDiv key={index}>
-                  <Text>
-                   {item.text1}
-                  </Text>
-                  <Text>
-                    {item.text2}
-                  </Text>
+                  <Text>{item.text1}</Text>
+                  <Text>{item.text2}</Text>
                   <Text>{item.price}</Text>
                 </TextDiv>
               );
             }
-            return <p key={index}></p>
+            return <p key={index}></p>;
           })}
-          <Image></Image>
+          <Image srcset="" src={image} alt="sofa" loading="lazy" />
         </InfoDiv>
       </ServicesContainer>
     </Container>

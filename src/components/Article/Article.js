@@ -8,7 +8,7 @@ import {
   Text,
 } from './Article.styled';
 import { useParams } from 'react-router-dom';
-import image from "../../images/images/IMG_4299.jpg"
+import image from "../../images/images/exp_x1.jpg"
 
 const Article = () => {
   const { id } = useParams();

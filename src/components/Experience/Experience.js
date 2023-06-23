@@ -8,14 +8,20 @@ import {
   Time,
   Job,
 } from './Experience.styled';
-import image from '../../images/images/IMG_4299.jpg';
+import image_x1 from '../../images/images/exp_x1.jpg';
+import image_x2 from '../../images/images/exp_x2.jpg';
 
 const Experience = () => {
   return (
     <div style={{ background: 'rgba(217, 217, 217, 0.2)' }}>
       <Container>
         <ExtraContainer>
-          <Image src={image} alt="psycholog" />
+          <Image
+            srcset={`${image_x1} 1x, ${image_x2} 2x`}
+            src={image_x1}
+            alt="psycholog"
+            loading="lazy"
+          />
 
           <TextContainer>
             <Title>Загальний досвід роботи</Title>

@@ -8,6 +8,7 @@ import {
   Link,
   AddText,
 } from './ProgrammAddInfo.styled';
+import laptop_img from '../../images/images/program_add_info_x1.jpg';
 
 const ProgrammAddInfo = () => {
   return (
@@ -16,7 +17,7 @@ const ProgrammAddInfo = () => {
         <HidenTitle>
           Додаткова інформація про програму "батьківська Любов"
         </HidenTitle>
-        <Image></Image>
+        <Image src={laptop_img} alt="" loading="lazy" />
         <TextContainer>
           <MainText>Вартість програми: 10 000 грн.</MainText>
           <MainText>Реєструйся на програму “Батьківська любов”</MainText>

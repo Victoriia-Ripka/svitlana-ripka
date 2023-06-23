@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device';
-import image_mobile from '../../images/images/mobile/services_x1.jpg';
-import image_mobileTablet from '../../images/images/mobileTablet/services_x1.jpg';
-import image_tablet from '../../images/images/tablet/services_x1.jpg';
-import image_laptop from '../../images/images/laptop/services_x1.jpg';
 
 export const ServicesContainer = styled.div`
   display: flex;
@@ -121,7 +117,6 @@ export const InfoDiv = styled.div`
   }
 
   @media ${device.laptop} {
-    position: relative;
     margin-top: 30px;
     width: 1062px;
     height: 460px;
@@ -153,9 +148,6 @@ export const TextDiv = styled.div`
     width: 580px;
     margin-right: 0;
     height: 444px;
-    position: absolute;
-    top: 20px;
-    left: 0;
   }
 `;
 
@@ -189,33 +181,27 @@ export const Text = styled.p`
   }
 `;
 
-export const Image = styled.div`
-  width: 115px;
+export const Image = styled.img`
+  min-width: 115px;
   height: 230px;
-  background-image: url(${image_mobile});
-  // background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-grow: 1;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 0.8;
 
   @media ${device.mobileTablet} {
-    background-image: url(${image_mobileTablet});
     width: 150px;
     height: 191px;
   }
 
   @media ${device.tablet} {
-    background-image: url(${image_tablet});
     width: 310px;
     height: 289px;
+    border-radius: 70px;
   }
 
   @media ${device.laptop} {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    background-image: url(${image_laptop});
     width: 477px;
     height: 444px;
+    border-radius: 150px;
   }
 `;

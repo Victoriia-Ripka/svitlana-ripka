@@ -75,6 +75,7 @@ export const ImageBackground = styled.div`
 export const Image = styled.img`
   width: 117px;
   height: 145px;
+  object-fit: cover;
 
   @media ${device.mobileTablet} {
     width: 168px;

@@ -12,7 +12,7 @@ import {
   PrevieText,
 } from './Articles.styled';
 import axios from 'axios';
-import image from '../../images/images/IMG_4299.jpg';
+import image from '../../images/images/exp_x1.jpg';
 
 const Articles = () => {
   const [articlesArray, setArticlesArray] = useState([]);

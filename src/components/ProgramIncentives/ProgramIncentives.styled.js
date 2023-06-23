@@ -132,6 +132,7 @@ export const Image = styled.img`
   width: 304px;
   height: 272px;
   margin 0 auto;
+  object-fit: cover;
 
   @media ${device.mobileTablet} {
     width: 208px;

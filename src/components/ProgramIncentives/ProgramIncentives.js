@@ -29,7 +29,7 @@ const ProgramIncentives = () => {
               https://forms.gle/TbgMsXoraFGezJ7u9{' '}
             </Link>
           </TextContainer>
-          <Image src={img_laptop} alt="family" />
+          <Image src={img_laptop} alt="family" loading="lazy"/>
         </InfoContainer>
       </IncentivesContainer>
     </Container>
