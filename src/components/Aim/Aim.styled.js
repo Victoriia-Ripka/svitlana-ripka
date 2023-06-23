@@ -10,10 +10,12 @@ export const AimContainer = styled.div`
   @media ${device.mobileTablet} {
     width: 411px;
   }
+
   @media ${device.tablet} {
     width: 642px;
     height: 590px;
   }
+
   @media ${device.laptop} {
     width: 1050px;
     height: 777px;
@@ -30,9 +32,11 @@ export const ExtraContainer = styled.div`
   @media ${device.mobileTablet} {
     justify-content: space-between;
   }
+
   @media ${device.tablet} {
     height: 470px;
   }
+
   @media ${device.laptop} {
     height: 637px;
   }
@@ -54,11 +58,14 @@ export const TextContainer = styled.div`
 
   @media ${device.mobileTablet} {
     width: 155px;
+    transform: translateX(0);
     position: static;
   }
+
   @media ${device.tablet} {
     width: 270px;
   }
+
   @media ${device.laptop} {
     width: 450px;
   }
@@ -80,6 +87,7 @@ export const Title = styled.h2`
     margin-bottom: 40px;
     width: 270px;
   }
+
   @media ${device.laptop} {
     font-size: 48px;
     margin: 0 auto 40px;
@@ -101,7 +109,7 @@ export const Aims = styled.li`
   }
 
   @media ${device.tablet} {
-    font-size: 18px;
+    font-size: 20px;
     width: 270px;
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -109,7 +117,7 @@ export const Aims = styled.li`
   }
 
   @media ${device.laptop} {
-    font-size: 20px;
+    font-size: 24px;
     width: 450px;
   }
 `;
@@ -172,13 +180,13 @@ export const Text = styled.p`
     width: 340px;
   }
   @media ${device.tablet} {
-    font-size: 20px;
+    font-size: 24px;
     width: 636px;
     margin: 50px auto 0;
   }
 
   @media ${device.laptop} {
-    font-size: 24px;
+    font-size: 32px;
     width: 746px;
     margin: 60px auto 0;
   }

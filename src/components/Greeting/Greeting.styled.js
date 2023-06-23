@@ -114,7 +114,7 @@ export const Text = styled.div`
 
   @media ${device.tablet} {
     width: 365px;
-    font-size: 18px;
+    font-size: 20px;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -122,7 +122,7 @@ export const Text = styled.div`
 
   @media ${device.laptop} {
     width: 520px;
-    font-size: 20px;
+    font-size: 24px;
     &:not(:last-child) {
       margin-bottom: 15px;
     }
