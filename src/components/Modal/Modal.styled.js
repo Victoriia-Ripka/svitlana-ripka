@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
 
 export const Backdrop = styled.div`
-  display: ${({ open }) => (open ? "flex" : "none")};
-  position: ${({ open }) => (open ? "fixed" : "absolute")};
-  overflow: ${({ open }) => (open ? "" : "hidden")};
-  pointer-events: ${({ open }) => (open ? "" : "none")};
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  position: ${({ open }) => (open ? 'fixed' : 'absolute')};
+  overflow: ${({ open }) => (open ? '' : 'hidden')};
+  pointer-events: ${({ open }) => (open ? '' : 'none')};
   top: 0;
   left: 0;
   z-index: 50;
@@ -48,7 +48,7 @@ export const ModalDiv = styled.div`
 `;
 
 export const ModalTitle = styled.h2`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 20px;
   line-height: 1.3;
@@ -87,9 +87,11 @@ export const IconItem = styled.li``;
 
 export const IconLink = styled.a`
   color: black;
+  transition: 0.3s;
+
   &:hover,
   &:focus {
-    color: #594d46;
+    transform: scale(1.2);
   }
 `;
 
@@ -97,7 +99,7 @@ export const CloseButton = styled.div`
   position: absolute;
   top: 30px;
   right: 30px;
-  transform: scale(1);
+  transform: scale(1.2);
   transition: 0.3s;
 
   &:hover,
