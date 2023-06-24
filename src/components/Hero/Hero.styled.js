@@ -71,16 +71,13 @@ export const HeroContainer = styled.div`
   }
 
   @media ${device.tablet} {
-    width: 490px;
-    display: flex;
+    margin: 0 0 0 70px;
     flex-direction: column;
     align-items: center;
     height: 100%;
   }
 
   @media ${device.laptop} {
-    width: 700px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     height: 370px;
