@@ -48,7 +48,7 @@ const Aim = () => {
           </ExtraContainer>
           <Text>
             Загальною метою є збереження та покращення психічного здоров'я
-            українців.
+            українців
           </Text>
         </AimContainer>
       </Container>

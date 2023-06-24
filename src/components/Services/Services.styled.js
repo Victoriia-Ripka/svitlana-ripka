@@ -23,7 +23,7 @@ export const Title = styled.h1`
   }
 
   @media ${device.tablet} {
-    font-size: 24px;
+    font-size: 28px;
     width: 676px;
     margin-bottom: 30px;
   }
@@ -146,7 +146,7 @@ export const TextDiv = styled.div`
   @media ${device.laptop} {
     font-size: 32px;
     width: 580px;
-    margin-right: 0;
+    margin-right: 10px;
     height: 444px;
   }
 `;
@@ -200,7 +200,7 @@ export const Image = styled.img`
   }
 
   @media ${device.laptop} {
-    width: 477px;
+    width: 470px;
     height: 444px;
     border-radius: 150px;
   }

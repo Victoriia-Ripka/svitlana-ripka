@@ -15,7 +15,7 @@ const ProgramIncentives = () => {
   return (
     <Container>
       <IncentivesContainer>
-        <Title>Програма “Батьківська любов”</Title>
+        <Title>Програма “Головний ресурс”</Title>
         <InfoContainer>
           <TextContainer>
             <Text>Бажаєш побудувати дружні довірливі стосунки з дитиною?</Text>

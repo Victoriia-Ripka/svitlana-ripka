@@ -20,7 +20,7 @@ const ProgrammAddInfo = () => {
         <Image src={laptop_img} alt="" loading="lazy" />
         <TextContainer>
           <MainText>Вартість програми: 10 000 грн.</MainText>
-          <MainText>Реєструйся на програму “Батьківська любов”</MainText>
+          <MainText>Реєструйся на програму “Головний ресурс”</MainText>
           <Link href="https://forms.gle/TbgMsXoraFGezJ7u9 " target="_blank">
             https://forms.gle/TbgMsXoraFGezJ7u9{' '}
           </Link>
