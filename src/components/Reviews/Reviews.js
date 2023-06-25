@@ -4,8 +4,6 @@ import {
   ReviewsContainer,
   Title,
   SlideContainer,
-  Slides,
-  Slide,
   Info,
   AvatarDiv,
   UserInfo,
@@ -13,29 +11,23 @@ import {
   Country,
   Text,
   Review,
-  ArrowNext,
-  ArrowBack,
 } from './Reviews.styled';
 import ReviewsArray from '../../data/reviews.json';
-import image from '../../images/png/arrow-right.png';
 import { Modal } from './Modal';
 import boyAvatar from '../../images/png/boy-avatar-80.png';
 import girlAvatar from '../../images/png/girl-avatar-80.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, Virtual } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/virtual';
 
 const Reviews = () => {
-  const reviewsCount = ReviewsArray.length;
+  // const reviewsCount = ReviewsArray.length;
   const [activeIndex, setActiveIndex] = useState(0);
   const [open, setOpen] = useState(null);
-
-  const getPrev = () => {
-    const indexWillbe = (activeIndex - 1 + reviewsCount) % reviewsCount;
-    setActiveIndex(indexWillbe);
-  };
-
-  const getNext = () => {
-    const indexWillbe = (activeIndex + 1) % reviewsCount;
-    setActiveIndex(indexWillbe);
-  };
 
   const cutText = text => {
     const newText = text.slice(0, 400) + '...';
@@ -50,35 +42,36 @@ const Reviews = () => {
     <Container>
       <ReviewsContainer>
         <Title>Відгуки моїх клієнтів</Title>
-        <Slides>
-          <ArrowBack src={image} id="prev" onClick={getPrev}></ArrowBack>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, Virtual]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          virtual
+          pagination={{ clickable: true }}
+        >
           {ReviewsArray.map((item, index) => {
             return (
-              <SlideContainer
+              <SwiperSlide
                 key={index}
-                active={activeIndex === index ? true : false}
+                onClick={handleClick}
+                virtualIndex={index}
               >
-                <Slide onClick={handleClick}>
-                  <Info>
-                    <AvatarDiv>
-                      <img
-                        src={item.sex ? boyAvatar : girlAvatar}
-                        alt="avatar"
-                      />
-                    </AvatarDiv>
-                    <UserInfo>
-                      <Name>{item.name}</Name>
-                      <Country>{item.country} </Country>
-                    </UserInfo>
-                  </Info>
-                  <Text>{item.type}</Text>
-                  <Review>{cutText(item.review)}</Review>
-                </Slide>
-              </SlideContainer>
+                <Info>
+                  <AvatarDiv>
+                    <img src={item.sex ? boyAvatar : girlAvatar} alt="avatar" />
+                  </AvatarDiv>
+                  <UserInfo>
+                    <Name>{item.name}</Name>
+                    <Country>{item.country} </Country>
+                  </UserInfo>
+                </Info>
+                <Text>{item.type}</Text>
+                <Review>{cutText(item.review)}</Review>
+              </SwiperSlide>
             );
           })}
-          <ArrowNext src={image} id="next" onClick={getNext}></ArrowNext>
-        </Slides>
+        </Swiper>
       </ReviewsContainer>
       <Modal index={activeIndex} open={open} setOpenModal={setOpen} />
     </Container>
