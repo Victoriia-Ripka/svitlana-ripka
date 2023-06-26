@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device';
+import { SwiperSlide } from 'swiper/react';
+import image from '../../images/png/arrow-right.png';
 
 export const ReviewsContainer = styled.div`
   margin: 0 auto;
@@ -48,19 +50,12 @@ export const Slides = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  @media ${device.mobileTablet} {
-  }
-
   @media ${device.tablet} {
     justify-content: space-between;
   }
 `;
 
-export const SlideContainer = styled.div`
-  display: ${({ active }) => (active ? 'block' : 'none')};
-`;
-
-export const Slide = styled.div`
+export const Slide = styled(SwiperSlide)`
   background: #ffffff;
   border: 2px solid #594d46;
   border-radius: 25px;
@@ -192,9 +187,10 @@ export const Review = styled.p`
   }
 `;
 
-export const ArrowBack = styled.img`
+export const ArrowBack = styled.div`
   height: 25px;
   width: 25px;
+  background-image: url(${image});
   cursor: pointer;
   transform: rotate(180deg);
   transition: 0.3s;
@@ -229,9 +225,10 @@ export const ArrowBack = styled.img`
   }
 `;
 
-export const ArrowNext = styled.img`
+export const ArrowNext = styled.div`
   height: 25px;
   width: 25px;
+  background-image: url(${image});
   cursor: pointer;
   transition: 0.3s;
 
