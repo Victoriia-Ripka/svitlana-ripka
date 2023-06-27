@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device';
-import { SwiperSlide } from 'swiper/react';
-import image from '../../images/png/arrow-right.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const ReviewsContainer = styled.div`
   margin: 0 auto;
-  height: 410px;
+  height: 390px;
 
   @media ${device.mobileTablet} {
     width: 436px;
-    height: 310px;
+    height: 298px;
   }
 
   @media ${device.tablet} {
@@ -18,7 +17,7 @@ export const ReviewsContainer = styled.div`
   }
   @media ${device.laptop} {
     width: 1070px;
-    height: 440px;
+    height: 455px;
   }
 `;
 
@@ -59,7 +58,7 @@ export const Slide = styled(SwiperSlide)`
   background: #ffffff;
   border: 2px solid #594d46;
   border-radius: 25px;
-  padding: 25px;
+  padding: 20px 45px;
   width: 240px;
   height: 360px;
   cursor: pointer;
@@ -68,13 +67,17 @@ export const Slide = styled(SwiperSlide)`
     width: 340px;
     height: 270px;
   }
+
   @media ${device.tablet} {
     width: 585px;
     height: 300px;
+    padding: 20px 45px;
   }
+
   @media ${device.laptop} {
     width: 900px;
-    height: 320px;
+    height: 300px;
+    padding: 45px;
   }
 `;
 
@@ -187,77 +190,27 @@ export const Review = styled.p`
   }
 `;
 
-export const ArrowBack = styled.div`
-  height: 25px;
-  width: 25px;
-  background-image: url(${image});
-  cursor: pointer;
-  transform: rotate(180deg);
-  transition: 0.3s;
-
-  &:hover,
-  &:focus {
-    transform: rotate(180deg) scale(1.3);
-  }
-
+export const StyledSwiper = styled(Swiper)`
+  height: 350px;
   @media ${device.mobileTablet} {
-    transform: rotate(180deg) scale(1.3);
-    &:hover,
-    &:focus {
-      transform: rotate(180deg) scale(1.5);
-    }
+    height: 260px;
   }
 
   @media ${device.tablet} {
-    transform: rotate(180deg) scale(1.5);
-    &:hover,
-    &:focus {
-      transform: rotate(180deg) scale(1.8);
-    }
+    height: 300px;
   }
 
   @media ${device.laptop} {
-    transform: rotate(180deg) scale(2);
-    &:hover,
-    &:focus {
-      transform: rotate(180deg) scale(2.4);
-    }
-  }
-`;
-
-export const ArrowNext = styled.div`
-  height: 25px;
-  width: 25px;
-  background-image: url(${image});
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.3);
+    height: 350px;
   }
 
-  @media ${device.mobileTablet} {
-    transform: scale(1.3);
-    &:hover,
-    &:focus {
-      transform: scale(1.5);
-    }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: rgb(89, 77, 70);
   }
 
-  @media ${device.tablet} {
-    transform: scale(1.5);
-    &:hover,
-    &:focus {
-      transform: scale(1.8);
-    }
-  }
-
-  @media ${device.laptop} {
-    transform: scale(2);
-    &:hover,
-    &:focus {
-      transform: scale(2.4);
-    }
+  .swiper-pagination-bullet {
+    mergin: 50px;
+    background-color: rgb(89, 77, 70);
   }
 `;

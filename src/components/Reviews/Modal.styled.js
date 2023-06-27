@@ -39,10 +39,8 @@ export const ModalDiv = styled.div`
   }
 
   @media ${device.mobileTablet} {
-    width: 70%;
-    height: 90%;
-    max-width: 500px;
-    max-height: 400px;
+    width: 450px;
+    height: 80%;
     padding: 35px 35px;
     margin: auto;
     border: 1px solid #594d46;
@@ -50,12 +48,13 @@ export const ModalDiv = styled.div`
   }
 
   @media ${device.tablet} {
-    max-width: 700px;
+    width: 700px;
+    max-height: 500px;
     padding: 40px 40px;
   }
 
   @media ${device.laptop} {
-    max-width: 1280px;
+    width: 900px;
     max-height: 460px;
     padding: 50px 50px;
   }
