@@ -93,7 +93,7 @@ export const ContainerAnswer = styled.div`
   }
 `;
 
-export const QuestionText = styled.div`
+export const QuestionText = styled.p`
   font-family: 'Lora';
   font-weight: 400;
   max-width: 260px;
@@ -135,7 +135,7 @@ export const ImgContainer = styled.img`
   }
 `;
 
-export const AnswerText = styled.p`
+export const AnswerContiner = styled.div`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
   ${({ isOpen }) =>

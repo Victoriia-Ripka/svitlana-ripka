@@ -6,7 +6,7 @@ import {
   ContainerAnswer,
   QuestionText,
   ImgContainer,
-  AnswerText,
+  AnswerContiner,
   BoldText,
   NormalText,
 } from './ProgramSchedule.styled';
@@ -34,7 +34,7 @@ const ProgramSchedule = () => {
           <QuestionText>Теми занять</QuestionText>
           <ImgContainer src={image} alt="cross" isOpen={open} />
         </ContainerAnswer>
-        <AnswerText isOpen={open}>
+        <AnswerContiner isOpen={open}>
           {scheduleText.map((item, index) => (
             <div key={index}>
               <BoldText>
@@ -43,7 +43,7 @@ const ProgramSchedule = () => {
               <NormalText>{item.description}</NormalText>
             </div>
           ))}
-        </AnswerText>  
+        </AnswerContiner>
       </ExtraContainer>
     </Container>
   );
