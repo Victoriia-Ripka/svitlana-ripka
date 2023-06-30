@@ -118,7 +118,7 @@ export const Time = styled.p`
 export const Job = styled.p`
   font-family: 'Lora';
   font-size: 11px;
-  line-height: 2.9;
+  line-height: 2;
   color: #000000;
   margin-bottom: 15px;
 
