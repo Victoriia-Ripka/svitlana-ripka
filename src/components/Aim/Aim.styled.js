@@ -3,12 +3,12 @@ import { device } from '../../styles/device';
 
 export const AimContainer = styled.div`
   margin: 0 auto;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
 
   @media ${device.mobileTablet} {
     width: 411px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
   }
 
   @media ${device.tablet} {
@@ -24,13 +24,15 @@ export const AimContainer = styled.div`
 
 export const ExtraContainer = styled.div`
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  height: 290px;
 
   @media ${device.mobileTablet} {
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 290px;
   }
 
   @media ${device.tablet} {
@@ -43,22 +45,11 @@ export const ExtraContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  width: 140px;
-  position: absolute;
-  top: 11px;
-  left: 5px;
-
-  @media screen and (min-width: 380px) {
-    transform: translateX(10px);
-  }
-
-  @media screen and (min-width: 425px) {
-    transform: translateX(40px);
-  }
+  width: 200px;
+  margin: 20px auto 0;
 
   @media ${device.mobileTablet} {
     width: 155px;
-    transform: translateX(0);
     position: static;
   }
 
@@ -79,7 +70,6 @@ export const Title = styled.h2`
   text-align: center;
   margin-bottom: 15px;
   text-transform: capitalize;
-
   color: #594d46;
 
   @media ${device.tablet} {

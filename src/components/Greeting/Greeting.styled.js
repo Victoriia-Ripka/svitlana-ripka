@@ -2,22 +2,23 @@ import styled from 'styled-components';
 import { device } from '../../styles/device';
 
 export const GreetingContainer = styled.div`
-  display: flex;
-  margin: 15px auto 0;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  height: 420px;
+  margin: 0 auto;
 
   @media ${device.mobileTablet} {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
     width: 445px;
-    margin: 0 auto;
     justify-content: space-between;
+    height: 420px;
   }
+
   @media ${device.tablet} {
     width: 685px;
     height: 500px;
   }
+
   @media ${device.laptop} {
     width: 1070px;
     height: 600px;
@@ -27,14 +28,13 @@ export const GreetingContainer = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 183px;
-  height: 265px;
-  background: rgba(166, 155, 146, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 
   @media ${device.mobileTablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(166, 155, 146, 0.4);
     width: 218px;
     height: 314px;
   }
@@ -68,25 +68,15 @@ export const Img = styled.img`
 `;
 
 export const TextContainer = styled.div`
-  right: -10%;
-  width: 185px;
-  position: absolute;
-  transform: translateX(-50px);
-  top: 0;
-
-  @media screen and (min-width: 380px) {
-    transform: translateX(-65px);
-  }
-
-  @media screen and (min-width: 425px) {
-    transform: translateX(-90px);
-  }
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
 
   @media ${device.mobileTablet} {
     width: 206px;
-    margin-left: 0;
+    margin: 0 0 0 20px;
     position: static;
-    transform: translateX(0);
+    text-align: left;
   }
 
   @media ${device.tablet} {
@@ -102,7 +92,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.div`
-  width: 185px;
   font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
