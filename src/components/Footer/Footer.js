@@ -6,7 +6,7 @@ import { SiViber } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import {
   FooterComponent,
-  Text,
+  Text, TextLast, 
   IconContainer,
   FooterContainer,
   WorkContainer,
@@ -26,7 +26,7 @@ const Footer = () => {
           <WorkContainer>
             <Text>Години роботи</Text>
             <Text>пн - пт</Text>
-            <Text>з 9:00 до 21:00</Text>
+            <TextLast>з 9:00 до 21:00</TextLast>
           </WorkContainer>
           <SocialContainer>
             <Text>Підписуйся на мої соціальні мережі</Text>

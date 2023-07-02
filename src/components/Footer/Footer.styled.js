@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../../styles/device";
+import styled from 'styled-components';
+import { device } from '../../styles/device';
 
 export const FooterComponent = styled.footer`
   width: 100vw;
@@ -83,7 +83,7 @@ export const LinkContainer = styled.a`
 `;
 
 export const Text = styled.p`
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -94,6 +94,23 @@ export const Text = styled.p`
   @media ${device.tablet} {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 24px;
+  }
+`;
+
+export const TextLast = styled.p`
+  font-family: 'Lora';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #ffffff;
+
+  @media ${device.tablet} {
+    font-size: 20px;
   }
 
   @media ${device.laptop} {
@@ -116,7 +133,7 @@ export const LabelText = styled.span`
   @media ${device.laptop} {
     display: inline-block;
     position: static;
-    font-family: "Lora";
+    font-family: 'Lora';
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;

@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { device } from '../styles/device';
 
+export const Body = styled.div`
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+`;
+
 export const Container = styled.section`
   width: 100%;
   padding: 15px 8px;
