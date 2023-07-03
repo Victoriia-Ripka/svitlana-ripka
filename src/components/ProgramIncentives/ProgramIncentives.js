@@ -4,7 +4,7 @@ import {
   Title,
   Text,
   Image,
-  Link,
+  Button,
   IncentivesContainer,
   TextContainer,
   InfoContainer,
@@ -24,12 +24,11 @@ const ProgramIncentives = () => {
               на підвищений тон, знизити рівень тривожності та конфліктів у
               родині, розвинути розуміння, як діяти в тій чи іншій ситуації?
             </Text>
-            <Text>Реєструйся на програму</Text>
-            <Link href="https://forms.gle/TbgMsXoraFGezJ7u9 " target="_blank">
-              https://forms.gle/TbgMsXoraFGezJ7u9{' '}
-            </Link>
+            <Button href="https://forms.gle/TbgMsXoraFGezJ7u9 " target="_blank">
+              Реєструйся на програму
+            </Button>
           </TextContainer>
-          <Image src={img_laptop} alt="family" loading="lazy"/>
+          <Image src={img_laptop} alt="family" loading="lazy" />
         </InfoContainer>
       </IncentivesContainer>
     </Container>

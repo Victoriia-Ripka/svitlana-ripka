@@ -86,31 +86,55 @@ export const MainText = styled.p`
   }
 `;
 
-export const Link = styled.a`
+export const Button = styled.a`
+  width: 205px;
+  height: 50px;
+  padding: 7px;
+  display: block;
+
+  margin: 15px auto 0;
+
+  background: rgba(89, 77, 70, 0.9);
+  border-radius: 10px;
+
+  cursor: pointer;
+  background: white;
+  color: #594d46;
+  border: 1px solid #594d46;
+
   font-family: 'Lora';
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.3;
-  color: #594d46;
-  margin-bottom: 10px;
+  text-align: center;
+
   transition: 0.5s;
-  text-decoration-line: underline;
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    background: #594d46;
+    color: white;
+    font-weight: 700;
+    border: 1px solid transparent;
   }
 
   @media ${device.mobileTablet} {
-    font-size: 13px;
+    margin: 15px 0 0 0;
   }
 
   @media ${device.tablet} {
+    width: 260px;
+    height: 60px;
     font-size: 16px;
+    padding: 8px;
+    margin: 15px auto 0;
   }
 
   @media ${device.laptop} {
+    width: 420px;
+    height: 80px;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin: 15px 0 0 0;
   }
 `;
 

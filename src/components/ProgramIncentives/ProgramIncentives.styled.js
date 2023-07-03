@@ -148,3 +148,45 @@ export const Image = styled.img`
     height: 450px;
   }
 `;
+
+export const Button = styled.a`
+  width: 205px;
+  height: 40px;
+  padding: 12px;
+
+  background: rgba(89, 77, 70, 0.9);
+  border-radius: 10px;
+
+  cursor: pointer;
+  background: white;
+  color: #594d46;
+  border: 1px solid #594d46;
+
+  font-family: 'Lora';
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+  text-align: center;
+
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    background: #594d46;
+    color: white;
+    font-weight: 700;
+    border: 1px solid transparent;
+  }
+
+  @media ${device.tablet} {
+    width: 260px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  @media ${device.laptop} {
+    width: 400px;
+    height: 60px;
+    font-size: 24px;
+  }
+`;
