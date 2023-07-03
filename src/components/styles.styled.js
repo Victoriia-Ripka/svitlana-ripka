@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { device } from '../styles/device';
 
 export const Body = styled.div`
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Container = styled.section`

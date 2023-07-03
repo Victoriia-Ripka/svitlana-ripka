@@ -176,7 +176,7 @@ export const Button = styled.button`
   @media ${device.mobileTablet} {
     position: absolute;
     font-size: 14px;
-    top: 150px;
+    top: 160px;
   }
 
   @media ${device.tablet} {

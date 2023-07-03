@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../styles/device';
 
 export const FooterComponent = styled.footer`
+  margin-top: auto;
   width: 100vw;
   height: 100%;
   background-color: #594d46;
