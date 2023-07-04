@@ -1,34 +1,36 @@
 import { Container } from 'components/styles.styled';
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+// import axios from 'axios';
 import {
   ExtraContainer,
   Title,
   Image,
   Text,
 } from './Article.styled';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import image from "../../images/images/exp_x1.jpg"
 
 const Article = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
+  // eslint-disable-next-line no-unused-vars
   const [article, setArticle] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          `http://localhost:8080/api/articles/${id}`
-        );
-        setArticle(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `http://localhost:8080/api/articles/${id}`
+  //       );
+  //       setArticle(response.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
 
-    fetchData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //   fetchData();
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   const changeTextWithLineBreaks = text => {
     const textWithLineBreaks = text.replace(/\\n/g, '<br>');
