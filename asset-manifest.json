@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/svitlana-ripka/static/css/main.9ba6d1d4.css",
-    "main.js": "/svitlana-ripka/static/js/main.c88bc4cc.js",
+    "main.js": "/svitlana-ripka/static/js/main.c1c9251d.js",
     "static/css/938.bdddd68c.chunk.css": "/svitlana-ripka/static/css/938.bdddd68c.chunk.css",
     "static/js/938.09393f27.chunk.js": "/svitlana-ripka/static/js/938.09393f27.chunk.js",
     "static/js/284.9f47c199.chunk.js": "/svitlana-ripka/static/js/284.9f47c199.chunk.js",
     "static/js/779.a9c882e3.chunk.js": "/svitlana-ripka/static/js/779.a9c882e3.chunk.js",
     "static/js/942.b954f0fd.chunk.js": "/svitlana-ripka/static/js/942.b954f0fd.chunk.js",
-    "static/js/30.622f8b66.chunk.js": "/svitlana-ripka/static/js/30.622f8b66.chunk.js",
-    "static/js/443.aa9b21d6.chunk.js": "/svitlana-ripka/static/js/443.aa9b21d6.chunk.js",
+    "static/js/30.b7c0d969.chunk.js": "/svitlana-ripka/static/js/30.b7c0d969.chunk.js",
+    "static/js/443.e464a4f2.chunk.js": "/svitlana-ripka/static/js/443.e464a4f2.chunk.js",
     "static/js/533.6682865a.chunk.js": "/svitlana-ripka/static/js/533.6682865a.chunk.js",
     "static/js/976.d111ef8c.chunk.js": "/svitlana-ripka/static/js/976.d111ef8c.chunk.js",
     "static/js/13.15be8007.chunk.js": "/svitlana-ripka/static/js/13.15be8007.chunk.js",
-    "static/js/279.31e0d11f.chunk.js": "/svitlana-ripka/static/js/279.31e0d11f.chunk.js",
     "static/js/774.9d3068e9.chunk.js": "/svitlana-ripka/static/js/774.9d3068e9.chunk.js",
     "static/js/482.ee2be9af.chunk.js": "/svitlana-ripka/static/js/482.ee2be9af.chunk.js",
     "static/media/values_x1.jpg": "/svitlana-ripka/static/media/values_x1.ced5f52ee011a62ec295.jpg",
@@ -32,23 +31,22 @@
     "static/media/down-arrow-svgrepo-com.svg": "/svitlana-ripka/static/media/down-arrow-svgrepo-com.088b038d18e8b36574ec4db7ef8ffd0a.svg",
     "static/media/tick-svgrepo-com.svg": "/svitlana-ripka/static/media/tick-svgrepo-com.48ed00e2053b0c6bcf6e8ba8a103dc57.svg",
     "main.9ba6d1d4.css.map": "/svitlana-ripka/static/css/main.9ba6d1d4.css.map",
-    "main.c88bc4cc.js.map": "/svitlana-ripka/static/js/main.c88bc4cc.js.map",
+    "main.c1c9251d.js.map": "/svitlana-ripka/static/js/main.c1c9251d.js.map",
     "938.bdddd68c.chunk.css.map": "/svitlana-ripka/static/css/938.bdddd68c.chunk.css.map",
     "938.09393f27.chunk.js.map": "/svitlana-ripka/static/js/938.09393f27.chunk.js.map",
     "284.9f47c199.chunk.js.map": "/svitlana-ripka/static/js/284.9f47c199.chunk.js.map",
     "779.a9c882e3.chunk.js.map": "/svitlana-ripka/static/js/779.a9c882e3.chunk.js.map",
     "942.b954f0fd.chunk.js.map": "/svitlana-ripka/static/js/942.b954f0fd.chunk.js.map",
-    "30.622f8b66.chunk.js.map": "/svitlana-ripka/static/js/30.622f8b66.chunk.js.map",
-    "443.aa9b21d6.chunk.js.map": "/svitlana-ripka/static/js/443.aa9b21d6.chunk.js.map",
+    "30.b7c0d969.chunk.js.map": "/svitlana-ripka/static/js/30.b7c0d969.chunk.js.map",
+    "443.e464a4f2.chunk.js.map": "/svitlana-ripka/static/js/443.e464a4f2.chunk.js.map",
     "533.6682865a.chunk.js.map": "/svitlana-ripka/static/js/533.6682865a.chunk.js.map",
     "976.d111ef8c.chunk.js.map": "/svitlana-ripka/static/js/976.d111ef8c.chunk.js.map",
     "13.15be8007.chunk.js.map": "/svitlana-ripka/static/js/13.15be8007.chunk.js.map",
-    "279.31e0d11f.chunk.js.map": "/svitlana-ripka/static/js/279.31e0d11f.chunk.js.map",
     "774.9d3068e9.chunk.js.map": "/svitlana-ripka/static/js/774.9d3068e9.chunk.js.map",
     "482.ee2be9af.chunk.js.map": "/svitlana-ripka/static/js/482.ee2be9af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ba6d1d4.css",
-    "static/js/main.c88bc4cc.js"
+    "static/js/main.c1c9251d.js"
   ]
 }
