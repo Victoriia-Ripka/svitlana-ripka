@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// import React, { useEffect, useState } from 'react';
 import React, { useState } from 'react';
 import {
   Container,
@@ -13,24 +12,10 @@ import {
   ArticleTitle,
   PrevieText,
 } from './Articles.styled';
-// import axios from 'axios';
 import image from '../../images/images/exp_x1.jpg';
 
 const Articles = () => {
   const [articlesArray, setArticlesArray] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get('http://localhost:8080/api/articles');
-  //       setArticlesArray(response.data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
 
   const cutText = text => {
     const textWithLineBreaks = text.replace(/\\n/g, '<br>');
