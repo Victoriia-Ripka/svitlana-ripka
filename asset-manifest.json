@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/svitlana-ripka.netlify.app/static/css/main.85795638.css",
-    "main.js": "/svitlana-ripka.netlify.app/static/js/main.1679b15d.js",
+    "main.js": "/svitlana-ripka.netlify.app/static/js/main.e8584c8e.js",
     "static/css/938.bdddd68c.chunk.css": "/svitlana-ripka.netlify.app/static/css/938.bdddd68c.chunk.css",
     "static/js/938.09393f27.chunk.js": "/svitlana-ripka.netlify.app/static/js/938.09393f27.chunk.js",
     "static/js/284.9f47c199.chunk.js": "/svitlana-ripka.netlify.app/static/js/284.9f47c199.chunk.js",
@@ -31,7 +31,7 @@
     "static/media/down-arrow-svgrepo-com.svg": "/svitlana-ripka.netlify.app/static/media/down-arrow-svgrepo-com.088b038d18e8b36574ec4db7ef8ffd0a.svg",
     "static/media/tick-svgrepo-com.svg": "/svitlana-ripka.netlify.app/static/media/tick-svgrepo-com.48ed00e2053b0c6bcf6e8ba8a103dc57.svg",
     "main.85795638.css.map": "/svitlana-ripka.netlify.app/static/css/main.85795638.css.map",
-    "main.1679b15d.js.map": "/svitlana-ripka.netlify.app/static/js/main.1679b15d.js.map",
+    "main.e8584c8e.js.map": "/svitlana-ripka.netlify.app/static/js/main.e8584c8e.js.map",
     "938.bdddd68c.chunk.css.map": "/svitlana-ripka.netlify.app/static/css/938.bdddd68c.chunk.css.map",
     "938.09393f27.chunk.js.map": "/svitlana-ripka.netlify.app/static/js/938.09393f27.chunk.js.map",
     "284.9f47c199.chunk.js.map": "/svitlana-ripka.netlify.app/static/js/284.9f47c199.chunk.js.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.85795638.css",
-    "static/js/main.1679b15d.js"
+    "static/js/main.e8584c8e.js"
   ]
 }
